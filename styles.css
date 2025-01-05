@@ -1,0 +1,162 @@
+/* SCROLLBAR WEBKIT */
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #ee0653;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #900634;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Karla", sans-serif;
+}
+
+body {
+  background-color: #333333;
+  min-height: 200vh;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: 0.6s;
+  padding: 40px 100px;
+  z-index: 99999;
+}
+header.sticky {
+  padding: 5px 100px;
+  background-color: white;
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.432);
+}
+
+header .logo {
+  position: relative;
+  font-weight: 700;
+  color: white;
+  text-decoration: none;
+  font-size: 2em;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  transition: 0.6s;
+}
+
+header ul {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+header ul li {
+  position: relative;
+  list-style: none;
+}
+header ul li a {
+  position: relative;
+  margin: 0 15px;
+  text-decoration: none;
+  color: white;
+  letter-spacing: 2px;
+  font-weight: 500px;
+  transition: 0.6s;
+}
+
+header ul li a:hover {
+  color: rgb(198, 198, 198);
+}
+
+header .logo::before {
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  left: 0;
+  width: 0%;
+  height: 3px;
+  background-color: #ee0653;
+  transition: all 0.5s;
+}
+
+header .logo:hover::before {
+  width: 100%;
+}
+
+header ul li a::before {
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  left: 0;
+  width: 0%;
+  height: 3px;
+  background-color: #ee0653;
+  transition: all 0.5s;
+}
+
+header ul li a:hover::before {
+  width: 100%;
+}
+
+header.sticky ul li a {
+  color: #171717;
+}
+
+header.sticky ul li a:hover {
+  color: rgb(212, 212, 212);
+}
+
+header.sticky .logo {
+  color: #171717;
+}
+
+header.sticky .logo::before {
+  bottom: -2px;
+}
+
+header.sticky .logo:hover::before {
+  bottom: -2px;
+}
+
+/* SECTION */
+
+section {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+section h1 {
+  color: white;
+}
+
+.home {
+  background: #171717;
+}
+
+.about {
+  background: #333333;
+}
+.portfolio {
+  background: #171717;
+}
+.skills {
+  background: #333333;
+}
+.contact {
+  background: #171717;
+}
