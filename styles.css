@@ -28,6 +28,10 @@ body {
   min-height: 200vh;
 }
 
+h2{
+  color: white;
+}
+
 header {
   position: fixed;
   top: 0;
