@@ -175,3 +175,15 @@ p {
 .contact {
   background: #171717;
 }
+
+/* Links */
+
+.links {
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+}
+
+.links:hover {
+  color: rgb(161, 161, 161);
+}
