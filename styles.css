@@ -138,8 +138,25 @@ header.sticky .logo:hover::before {
 
 /* SECTION */
 section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
   height: 100vh;
   padding: 200px;
+  color: white;
+}
+
+section p {
+  font-size: 100px;
+}
+
+section img {
+  margin: 10px;
+  margin: 20px;
+  border: 10px solid rgb(255, 255, 255);
+  border-radius: 100%;
+  height: 500px;
 }
 
 .title {
@@ -158,8 +175,7 @@ section {
   color: #888;
 }
 
-section h1,
-p {
+section h1 {
   color: white;
 }
 
@@ -194,6 +210,7 @@ section.about {
 }
 
 .copyright-notice {
+  color: white;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -209,45 +226,9 @@ section.about {
   text-decoration: underline;
 }
 
-/* CARD */
-
-.card {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.card p {
-  font-size: 100px;
-}
-
-.card img {
-  margin: 20px;
-  border: 10px solid rgb(255, 255, 255);
-  border-radius: 100%;
-  height: 500px;
-}
-
 /* PORTRAIT RESPONSIVE */
 
 @media only screen and (max-width: 475px) {
-  .card {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .card p {
-    font-size: 20px;
-  }
-
-  .card img {
-    margin: 10px;
-    border: 5px solid rgb(255, 255, 255);
-    border-radius: 100%;
-    height: 300px;
-  }
-
   .copyright-notice {
     display: flex;
     justify-content: center;
@@ -256,11 +237,26 @@ section.about {
     font-size: 8px;
   }
   section {
+    display: grid;
+    place-content: center;
+    width: 100vw;
+
     height: 100vh;
     padding-top: 80px;
     padding-bottom: 80px;
     padding-left: 30px;
     padding-right: 30px;
+  }
+
+  section p {
+    font-size: 20px;
+  }
+
+  section img {
+    margin: 10px;
+    border: 5px solid rgb(255, 255, 255);
+    border-radius: 100%;
+    height: 250px;
   }
 
   header.sticky {

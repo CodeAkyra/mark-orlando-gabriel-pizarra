@@ -23,10 +23,9 @@
       </ul>
     </header>
     <section class="home" id="Home">
-      <div class="card">
-        <p>Hi! I'm Mark Orlando Gabriel Pizarra! BOOP*</p>
-        <img src="images/mark-pizarra.jpg" alt="" />
-      </div>
+      <p class="text1">Hi! I'm Mark Orlando Gabriel Pizarra! BOOP*</p>
+      <img src="images/mark-pizarra.jpg" alt="" />
+      <p class="text2">Hi! I'm Mark Orlando Gabriel Pizarra! BOOP*</p>
     </section>
     <section class="about" id="About">
       <h1>About</h1>
@@ -51,10 +50,6 @@
       >
     </p>
   </body>
-  <script>
-    window.addEventListener("scroll", function () {
-      var header = document.querySelector("header");
-      header.classList.toggle("sticky", window.scrollY > 0);
-    });
-  </script>
+  <script src="scroll.js"></script>
+  <script src="resize.js"></script>
 </html>
