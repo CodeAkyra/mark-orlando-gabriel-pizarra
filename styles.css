@@ -187,3 +187,9 @@ p {
 .links:hover {
   color: rgb(161, 161, 161);
 }
+
+@media only screen and (max-width: 600px) {
+  .home {
+    background-color: lightblue;
+  }
+}
