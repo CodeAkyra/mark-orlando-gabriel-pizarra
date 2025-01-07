@@ -28,6 +28,12 @@ body {
   min-height: 200vh;
 }
 
+header.sticky {
+  padding: 5px 100px;
+  background-color: white;
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.432);
+}
+
 header {
   position: fixed;
   top: 0;
@@ -39,11 +45,6 @@ header {
   transition: 0.6s;
   padding: 40px 100px;
   z-index: 99999;
-}
-header.sticky {
-  padding: 5px 100px;
-  background-color: white;
-  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.432);
 }
 
 header .logo {
@@ -189,7 +190,69 @@ p {
 }
 
 @media only screen and (max-width: 600px) {
+  header {
+    padding: 20px 20px;
+  }
+  header .logo {
+    font-size: 0.5em;
+  }
+
+  header ul {
+  }
+
+  header ul li {
+  }
+
+  header ul li a {
+    font-size: 8px;
+  }
+
   .home {
     background-color: lightblue;
   }
 }
+
+/* 
+header .logo {
+  position: relative;
+  font-weight: 700;
+  color: white;
+  text-decoration: none;
+  font-size: 2em;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  transition: 0.6s;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: 0.6s;
+  padding: 40px 100px;
+  z-index: 99999;
+}
+
+header ul {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+header ul li {
+  position: relative;
+  list-style: none;
+}
+header ul li a {
+  position: relative;
+  margin: 0 15px;
+  text-decoration: none;
+  color: white;
+  letter-spacing: 2px;
+  font-weight: 500px;
+  transition: 0.6s;
+} */
