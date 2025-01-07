@@ -133,7 +133,6 @@ header.sticky .logo:hover::before {
 }
 
 /* SECTION */
-
 section {
   height: 100vh;
   padding: 200px;
@@ -164,7 +163,8 @@ p {
   background: #171717;
 }
 
-.about {
+section.about {
+  height: 50vh;
   background: #333333;
 }
 .portfolio {
@@ -205,7 +205,7 @@ p {
   text-decoration: underline;
 }
 
-/* RESPONSIVE */
+/* PORTRAIT RESPONSIVE */
 
 @media only screen and (max-width: 700px) {
   .copyright-notice {
