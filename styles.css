@@ -218,7 +218,7 @@ section.about {
 }
 
 .card p {
-  font-size: 30px;
+  font-size: 100px;
 }
 
 .card img {
@@ -230,7 +230,7 @@ section.about {
 
 /* PORTRAIT RESPONSIVE */
 
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 475px) {
   .card {
     display: flex;
     justify-content: center;
@@ -238,14 +238,14 @@ section.about {
   }
 
   .card p {
-    font-size: 15px;
+    font-size: 20px;
   }
 
   .card img {
     margin: 10px;
     border: 5px solid rgb(255, 255, 255);
     border-radius: 100%;
-    height: 100px;
+    height: 300px;
   }
 
   .copyright-notice {
