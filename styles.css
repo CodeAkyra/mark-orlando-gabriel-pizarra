@@ -189,6 +189,22 @@ p {
   color: rgb(161, 161, 161);
 }
 
+.copyright-notice {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+}
+
+.copyright-contact {
+  color: white;
+  text-decoration: none;
+}
+
+.copyright-contact:hover {
+  text-decoration: underline;
+}
+
 /* RESPONSIVE */
 
 @media only screen and (max-width: 700px) {
