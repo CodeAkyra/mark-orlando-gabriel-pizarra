@@ -192,6 +192,14 @@ p {
 /* RESPONSIVE */
 
 @media only screen and (max-width: 700px) {
+  section {
+    height: 100vh;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+
   header {
     padding: 20px 20px;
   }
@@ -214,15 +222,26 @@ p {
   }
 
   header .logo::before {
-    bottom: -6px;
+    content: "";
+    position: absolute;
+    bottom: -5px;
     left: 0;
     width: 0%;
-    height: 3px;
-    background-color: #ee0653;
-    transition: all 0.5s;
   }
 
   header .logo:hover::before {
+    width: 100%;
+  }
+
+  header ul li a::before {
+    content: "";
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 0%;
+  }
+
+  header ul li a:hover::before {
     width: 100%;
   }
 
