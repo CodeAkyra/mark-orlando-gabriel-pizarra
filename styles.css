@@ -189,6 +189,8 @@ p {
   color: rgb(161, 161, 161);
 }
 
+/* RESPONSIVE */
+
 @media only screen and (max-width: 600px) {
   header {
     padding: 20px 20px;
@@ -205,6 +207,23 @@ p {
 
   header ul li a {
     font-size: 8px;
+  }
+
+  ::-webkit-scrollbar {
+    width: 2px;
+  }
+
+  header .logo::before {
+    bottom: -6px;
+    left: 0;
+    width: 0%;
+    height: 3px;
+    background-color: #ee0653;
+    transition: all 0.5s;
+  }
+
+  header .logo:hover::before {
+    width: 100%;
   }
 
   /* .home {
