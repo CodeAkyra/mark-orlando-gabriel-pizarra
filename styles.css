@@ -191,7 +191,7 @@ p {
 
 /* RESPONSIVE */
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 700px) {
   header {
     padding: 20px 20px;
   }
