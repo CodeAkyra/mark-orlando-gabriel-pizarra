@@ -148,7 +148,6 @@ section {
 }
 
 section p {
-  font-size: 100px;
 }
 
 section img {
@@ -180,6 +179,7 @@ section h1 {
 }
 
 .home {
+  font-size: 100px;
   background: #171717;
 }
 
@@ -249,7 +249,6 @@ section.about {
   }
 
   section p {
-    font-size: 20px;
   }
 
   section img {
@@ -257,6 +256,10 @@ section.about {
     border: 5px solid rgb(255, 255, 255);
     border-radius: 100%;
     height: 250px;
+  }
+
+  .home {
+    font-size: 20px;
   }
 
   header.sticky {
@@ -311,53 +314,4 @@ section.about {
   header ul li a:hover::before {
     width: 100%;
   }
-
-  /* .home {
-    background-color: lightblue;
-  } */
 }
-
-/* 
-header .logo {
-  position: relative;
-  font-weight: 700;
-  color: white;
-  text-decoration: none;
-  font-size: 2em;
-  text-transform: uppercase;
-  letter-spacing: 2px;
-  transition: 0.6s;
-}
-
-header {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  transition: 0.6s;
-  padding: 40px 100px;
-  z-index: 99999;
-}
-
-header ul {
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-header ul li {
-  position: relative;
-  list-style: none;
-}
-header ul li a {
-  position: relative;
-  margin: 0 15px;
-  text-decoration: none;
-  color: white;
-  letter-spacing: 2px;
-  font-weight: 500px;
-  transition: 0.6s;
-} */
